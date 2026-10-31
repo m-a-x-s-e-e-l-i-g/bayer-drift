@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eee9dc">
+  <title>Bayer Drift — colour outside the pixels.</title>
+  <meta name="description" content="Intentional colour interference, straight into your Canon RAW photographs. A free Magic Lantern module for the original EOS M by MAXmade. Explore real photographs and magnified details.">
+  <link rel="canonical" href="https://bayer-drift.netlify.app/">
+  <meta property="og:title" content="Bayer Drift — colour outside the pixels.">
+  <meta property="og:description" content="A little creative misalignment for the original Canon EOS M. Real RAW photographs. Unreasonably close details. Free & open source, by MAXmade.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bayer-drift.netlify.app/assets/social-preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead wrap">
+    <a class="wordmark" href="#" aria-label="Bayer Drift home"><img src="assets/mark.svg" width="36" height="36" alt=""><span>BAYER<br>DRIFT</span></a>
+    <nav aria-label="Main navigation"><a href="#closer">Look closer</a><a href="#photos">Photographs</a><a href="#start">Get started</a><a href="https://github.com/m-a-x-s-e-e-l-i-g/bayer-drift">GitHub ↗</a></nav>
+    <span class="byline">A camera experiment<br>by <a href="https://maxmade.nl/">MAXmade</a></span>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">FOR THE ORIGINAL CANON EOS M · 0.1.0</p>
+        <h1 id="hero-title">Colour<br>outside<br>the <em>pixels.</em></h1>
+        <p class="lead">A familiar scene. A beautiful little misalignment. Turn the sensor’s colour samples into repeating patterns, strange fringes and happy accidents.</p>
+        <a class="button" href="https://github.com/m-a-x-s-e-e-l-i-g/bayer-drift/releases/download/v0.1.0/BAYER-DRIFT-0.1.0-EOSM202.zip">Download for EOS M <span aria-hidden="true">↓</span></a>
+        <p class="download-note">Free &amp; open source. Magic Lantern required.</p>
+      </div>
+      <div class="hero-art">
+        <figure class="hero-photo"><img src="assets/photos/city-wide.webp" width="1800" height="1201" alt="A real EOS M cityscape broken into repeating rainbow-coloured blocks by Bayer Drift" fetchpriority="high"><figcaption><span>IMG_0025 / CANON EOS M · CR2</span></figcaption></figure>
+        <figure class="hero-detail"><img src="assets/photos/city-detail.png" width="960" height="960" alt="Enlarged 160 by 160 pixel detail from the same city photograph"><figcaption>160 × 160 pixels.<br><strong>A whole lot going on.</strong></figcaption></figure>
+        <span class="handnote">It’s in the RAW. <span aria-hidden="true">↗</span></span>
+      </div>
+    </section>
+
+    <section class="compatibility wrap" aria-label="Supported camera setup">
+      <p><strong>Made &amp; tested on<br>the original Canon EOS M.</strong></p>
+      <p>Canon <strong>2.0.2</strong><br>Magic Lantern <strong>2025-06-20 / API 8</strong></p>
+      <a href="#start">Check the setup <span aria-hidden="true">↘</span></a>
+    </section>
+
+    <section class="idea wrap" aria-labelledby="idea-title">
+      <p class="eyebrow">01 / A LITTLE OUT OF REGISTER</p>
+      <h2 id="idea-title">Let the colours<br><em>misbehave.</em></h2>
+      <div class="idea-copy"><p>Bayer Drift rearranges tiny groups of colour samples before your photograph becomes an image. Edges split into beads. Textures turn into grids. A plain wall suddenly has a lot to say.</p><p>Choose a recipe and press the <strong>normal shutter button</strong>. The effect is saved directly in your Canon CR2 RAW photograph.</p></div>
+    </section>
+
+    <section class="closer" id="closer" aria-labelledby="closer-title">
+      <div class="wrap">
+        <div class="section-heading"><div><p class="eyebrow">02 / THE GOOD STUFF IS IN THE DETAILS</p><h2 id="closer-title">Get unreasonably<br><em>close.</em></h2></div><p>Pick a photograph. Turn up the magnification.<br>These are real pixels from the supplied RAW files.</p></div>
+        <div class="inspector" id="inspector">
+          <div class="sample-options" role="group" aria-label="Choose a photograph">
+            <button type="button" data-sample="bark" aria-pressed="true">01 <span>Tree bark</span></button>
+            <button type="button" data-sample="city" aria-pressed="false">02 <span>City blocks</span></button>
+            <button type="button" data-sample="harbour" aria-pressed="false">03 <span>By the water</span></button>
+            <button type="button" data-sample="wall" aria-pressed="false">04 <span>Brickwork</span></button>
+            <button type="button" data-sample="bark-two" aria-pressed="false">05 <span>Bark, again</span></button>
+          </div>
+          <div class="inspector-heading"><h3 id="sample-title">A little rough around the edges.</h3><span id="sample-file">IMG_0011.CR2</span></div>
+          <div class="inspector-images">
+            <figure class="overview"><div class="source-viewport" id="source-viewport"><img id="overview-image" src="assets/photos/bark-small.webp" width="480" height="720" alt="Tree bark with small repeating colour blocks and fringes" loading="lazy"><span class="crop-marker" id="crop-marker" hidden aria-hidden="true"></span></div><figcaption><span>The photograph</span><span id="source-size">3476 × 5208 developed pixels</span></figcaption></figure>
+            <figure class="magnified"><div class="pixel-viewport"><img id="pixel-fallback" src="assets/photos/bark-detail.png" width="960" height="960" loading="lazy" alt="Enlarged detail from the tree-bark photograph"><canvas id="pixel-canvas" width="512" height="480" tabindex="0" aria-label="Magnified photograph detail. Drag or use arrow keys to move within the detail patch." hidden></canvas></div><figcaption><span id="pixel-caption" aria-live="polite">Enlarged native-pixel detail</span><span>Drag to explore ↔</span></figcaption></figure>
+          </div>
+          <div class="inspector-controls"><p id="viewer-help">The box marks this exact detail. Drag the close-up, or use its arrow keys.</p><div class="zoom-options" role="group" aria-label="Detail magnification"><span>Magnify</span><button type="button" data-zoom="2" aria-pressed="false">2×</button><button type="button" data-zoom="4" aria-pressed="true">4×</button><button type="button" data-zoom="8" aria-pressed="false">8×</button><button type="button" id="reset-detail">Re-centre</button></div></div>
+          <p class="viewer-status" id="viewer-status" role="status" hidden></p>
+        </div>
+        <p class="image-note">Full-resolution RGB developments, with camera white balance. Lossless detail crops; no extra glitch filter added. Magnification is display pixels per developed-image pixel. <a href="https://github.com/m-a-x-s-e-e-l-i-g/bayer-drift/blob/main/site/assets/photos/README.md">About these photographs ↗</a></p>
+      </div>
+    </section>
+
+    <section class="photographs wrap" id="photos" aria-labelledby="photos-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / OUT IN THE ORDINARY WORLD</p><h2 id="photos-title">Familiar places.<br><em>Unfamiliar colour.</em></h2></div><p>A tree. A waterside post. A brick wall.<br>Photographs by Max Seelig, with Bayer Drift on the EOS M.</p></div>
+      <div class="photo-spread">
+        <figure><a href="assets/photos/bark-two-wide.webp" aria-label="Open the second bark photograph"><img src="assets/photos/bark-two-small.webp" srcset="assets/photos/bark-two-small.webp 480w, assets/photos/bark-two-wide.webp 1201w" sizes="(min-width: 900px) 30vw, 46vw" width="480" height="720" alt="Tree bark with a dense blue and gold repeating interference pattern" loading="lazy"></a><figcaption><span>01 / BARK, AGAIN</span><span>IMG_0014.CR2</span></figcaption></figure>
+        <figure class="water-photo"><a href="assets/photos/harbour-wide.webp" aria-label="Open the waterside photograph"><img src="assets/photos/harbour-small.webp" srcset="assets/photos/harbour-small.webp 480w, assets/photos/harbour-wide.webp 1201w" sizes="(min-width: 900px) 30vw, 46vw" width="480" height="720" alt="A waterside post with coloured fringes along its pale silhouette" loading="lazy"></a><figcaption><span>02 / BY THE WATER</span><span>IMG_0028.CR2</span></figcaption></figure>
+        <div class="wall-spread"><figure><a href="assets/photos/wall-wide.webp" aria-label="Open the brickwork photograph"><img src="assets/photos/wall-small.webp" srcset="assets/photos/wall-small.webp 720w, assets/photos/wall-wide.webp 1800w" sizes="(min-width: 900px) 34vw, 92vw" width="720" height="480" alt="Pale brickwork with fine coloured patterns along the mortar" loading="lazy"></a><figcaption><span>03 / COLOUR IN THE CRACKS</span><span>IMG_0047.CR2</span></figcaption></figure><figure class="wall-detail"><img src="assets/photos/wall-detail.png" width="960" height="960" alt="A 160 by 160 pixel brickwork detail enlarged to reveal coloured beads and diagonal grid patterns" loading="lazy"><figcaption>And then you look a little closer.</figcaption></figure></div>
+      </div>
+    </section>
+
+    <section class="shoot wrap" id="start" aria-labelledby="start-title">
+      <div class="shoot-heading"><p class="eyebrow">04 / PUT IT IN YOUR CAMERA</p><h2 id="start-title">Pick a recipe.<br>Find a texture.<br><em>Press the shutter.</em></h2><p>Compose and focus with normal Canon LiveView. Bayer Drift applies the effect when you take the RAW photograph.</p><a class="text-link" href="https://github.com/m-a-x-s-e-e-l-i-g/bayer-drift#start-shooting">Full installation guide ↗</a></div>
+      <ol class="steps"><li><span class="step-number">01</span><div><h3>Check your EOS M.</h3><p>Original EOS M, Canon firmware 2.0.2, and the Magic Lantern 2025-06-20 EOSM.202 build. Other cameras and ML builds are unverified.</p></div></li><li><span class="step-number">02</span><div><h3>Add the module.</h3><p>With the camera OFF, copy <code>bayer.mo</code> into <code>ML/MODULES</code>. Enable it in the Modules tab, disable other MAXmade effects, and restart.</p></div></li><li><span class="step-number">03</span><div><h3>Make something a little strange.</h3><p>Use A+ / Auto ISO / Canon RAW / single-shot / native 1× LCD. Open <strong>Shoot → Bayer Drift → Photo effect ON</strong>. Choose a recipe, close the menu, wait for Ready and shoot normally.</p></div></li></ol>
+    </section>
+
+    <section class="recipes wrap" aria-labelledby="recipes-title">
+      <div><p class="eyebrow">A FEW WAYS TO LOSE REGISTRATION</p><h2 id="recipes-title">Start subtle.<br>Get <em>carried away.</em></h2><p>Try Subtle, Crunchy or Overdrive. Make it your own with the manual controls, or hit Shuffle for a recipe that stays put until you change it.</p></div>
+      <dl><div><dt>Strength</dt><dd>1–8 · local sample displacement</dd></div><div><dt>Pattern</dt><dd>Dots · Horizontal · Vertical</dd></div><div><dt>Texture size</dt><dd>Fine · Medium · Coarse</dd></div><div><dt>Phase</dt><dd>Four colour-sample registrations</dd></div><div><dt>Shuffle</dt><dd>A new recipe, ready to shoot again</dd></div></dl>
+    </section>
+
+    <section class="questions wrap" aria-labelledby="questions-title"><div><p class="eyebrow">A COUPLE OF GOOD QUESTIONS</p><h2 id="questions-title">Before you<br><em>drift off.</em></h2></div><div class="answers"><details><summary>Will I see the effect in LiveView?</summary><p>LiveView stays normal for composing and focusing. The effect is applied to the captured RAW photograph. This release has no simulated LiveView effect preview.</p></details><details><summary>Are these real camera photographs?</summary><p>Yes. Max supplied the original EOS M CR2 files. The gallery uses standard RAW developments and matching crops. No simulated effect was added for the website. Preset and strength settings were not supplied, so the examples are not labelled as particular recipes.</p></details><details><summary>Will my RAW converter show the same colours?</summary><p>The effect is in the RAW samples, but the visible result depends on demosaicing and colour processing. Camera review and different RAW converters can look different. Keep your original CR2 files and experiment.</p></details><details><summary>Does this replace my firmware?</summary><p>No. Bayer Drift is a Magic Lantern add-on module. Magic Lantern must already be installed. The download does not replace Canon firmware or the ML core. This release supports the original EOS M setup listed above, single-shot RAW photography, and no video or burst workflow.</p></details><details><summary>Where did this come from?</summary><p>An accidental colour-registration glitch while developing <a href="https://mirror-worlds.netlify.app/">Mirror Worlds</a>. It looked too interesting to leave as an accident. Both are camera experiments by MAXmade.</p></details></div></section>
+
+    <section class="download-section" id="download"><div class="wrap download-inner"><div><p class="eyebrow">BAYER DRIFT · 0.1.0 · BY MAXMADE</p><h2>A small module.<br>A strange new <em>texture.</em></h2><p>For the original Canon EOS M, with Magic Lantern.<br>Free &amp; open source. Normal shutter. Canon RAW.</p></div><div class="download-actions"><a class="button light" href="https://github.com/m-a-x-s-e-e-l-i-g/bayer-drift/releases/download/v0.1.0/BAYER-DRIFT-0.1.0-EOSM202.zip">Download Bayer Drift <span aria-hidden="true">↓</span></a><a href="https://github.com/m-a-x-s-e-e-l-i-g/bayer-drift/releases/tag/v0.1.0">Release notes &amp; checksum ↗</a></div></div></section>
+  </main>
+  <footer class="wrap"><a class="wordmark" href="#"><img src="assets/mark.svg" width="32" height="32" alt=""><span>BAYER<br>DRIFT</span></a><p>Made by <a href="https://maxmade.nl/">Max Seelig / MAXmade</a>.<br>Photography © Max Seelig. Software GPL-2.0-or-later.</p><div><a href="https://github.com/m-a-x-s-e-e-l-i-g/bayer-drift">Source &amp; issues ↗</a><a href="https://mirror-worlds.netlify.app/">Meet Mirror Worlds ↗</a><span>Built for a curious little camera.</span></div></footer>
+</body>
+</html>

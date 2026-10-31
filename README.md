@@ -4,9 +4,21 @@
 
 Bayer Drift is a creative [Magic Lantern](https://www.magiclantern.fm/) module by **Max Seelig (MAXmade)** for the original **Canon EOS M**. It shifts the registration of the sensor's colour samples in small repeating tiles, producing false colour, beaded edges and patterned interference. Take a photograph with the normal shutter button: the effect is saved in the **Canon CR2 RAW file**.
 
-[**Download 0.1.0**](https://github.com/m-a-x-s-e-e-l-i-g/bayer-drift/releases/tag/v0.1.0) · [Start shooting](#start-shooting) · [Settings](#settings) · [Build from source](docs/building.md)
+[**Explore the photographs & zoom into the details**](https://bayer-drift.netlify.app/) · [Download 0.1.0](https://github.com/m-a-x-s-e-e-l-i-g/bayer-drift/releases/tag/v0.1.0) · [Start shooting](#start-shooting) · [Settings](#settings) · [Build from source](docs/building.md)
 
-Developed on the EOS M, with successful camera operation confirmed by Max for the first release. Result photographs will be added when available.
+Developed and tested on the original EOS M by Max Seelig. These examples are developed from the original camera-processed CR2 files.
+
+## From the EOS M
+
+Full photographs on the left; matching **160 × 160 pixel crops**, enlarged with nearest-neighbour scaling, on the right. Select an image to open the larger version, or use the landing page's **[2× / 4× / 8× pixel viewer](https://bayer-drift.netlify.app/#closer)** to inspect and pan through the details.
+
+| The photograph | Look closer |
+|---|---|
+| [![City blocks with repeating colour interference, IMG_0025.CR2](site/assets/photos/city-small.webp)](site/assets/photos/city-wide.webp) | [![Enlarged native-pixel detail from IMG_0025.CR2](site/assets/photos/city-detail.png)](site/assets/photos/city-detail.png) |
+| [![Tree bark with coloured blocks and fringes, IMG_0011.CR2](site/assets/photos/bark-small.webp)](site/assets/photos/bark-wide.webp) | [![Enlarged native-pixel detail from IMG_0011.CR2](site/assets/photos/bark-detail.png)](site/assets/photos/bark-detail.png) |
+| [![Fine colour patterns around brick mortar, IMG_0047.CR2](site/assets/photos/wall-small.webp)](site/assets/photos/wall-wide.webp) | [![Enlarged native-pixel detail from IMG_0047.CR2](site/assets/photos/wall-detail.png)](site/assets/photos/wall-detail.png) |
+
+Photographs © Max Seelig (MAXmade). These are RAW developments with camera white balance, not a LiveView simulation. No extra glitch filter is added for the showcase. Colours depend on RAW development; recipe settings were not supplied and are not inferred. See the [image provenance and processing notes](site/assets/photos/README.md).
 
 ## What does it do?
 

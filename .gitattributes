@@ -10,6 +10,7 @@
 tests/bayer_dev1_reference/** -text -whitespace
 targets/**/*.sym -text
 release-manifests/** -text -whitespace
+site/assets/fonts/*-OFL.txt -whitespace
 # Preserve whitespace that is part of patch context and compiler output.
 targets/**/*.patch -whitespace
 release-manifests/**/elf-report.txt -whitespace

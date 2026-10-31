@@ -1,0 +1,113 @@
+{
+  "photographer": "Max Seelig (MAXmade)",
+  "camera": "Canon EOS M",
+  "processing": {
+    "rawpy": "0.27.0",
+    "demosaic": "AHD",
+    "color": "sRGB",
+    "white_balance": "camera",
+    "auto_bright": true,
+    "bit_depth": 8,
+    "added_effects": false,
+    "sharpening": false,
+    "noise_reduction": false
+  },
+  "note": "Web developments of camera-processed CR2 files; no synthetic effect added. Recipe values were not supplied and are not inferred. Native patches are lossless PNG; web overviews are resized WebP. Source CR2 files are not distributed.",
+  "photos": [
+    {
+      "id": "bark",
+      "original": "IMG_0011.CR2",
+      "title": "A little rough around the edges.",
+      "label": "Tree bark",
+      "alt": "Tree bark broken into small repeating colour blocks and bright fringes.",
+      "width": 3476,
+      "height": 5208,
+      "patch": {
+        "x": 1552,
+        "y": 1827,
+        "size": 512
+      },
+      "source_sha256": "f139183d96963f01154a0a40f2e075c25b28b660b769b495f139a7f365e92d1f",
+      "wide": "assets/photos/bark-wide.webp",
+      "small": "assets/photos/bark-small.webp",
+      "pixels": "assets/photos/bark-pixels.png",
+      "detail": "assets/photos/bark-detail.png"
+    },
+    {
+      "id": "city",
+      "original": "IMG_0025.CR2",
+      "title": "The city, slightly out of register.",
+      "label": "City blocks",
+      "alt": "A cityscape turned into a dense patchwork of coloured interference.",
+      "width": 5208,
+      "height": 3476,
+      "patch": {
+        "x": 2556,
+        "y": 1586,
+        "size": 512
+      },
+      "source_sha256": "6c40c8f2619c713c8bfe91bc111d41dd16743f2726dc4fe7a1bbd87f7f9090f7",
+      "wide": "assets/photos/city-wide.webp",
+      "small": "assets/photos/city-small.webp",
+      "pixels": "assets/photos/city-pixels.png",
+      "detail": "assets/photos/city-detail.png"
+    },
+    {
+      "id": "harbour",
+      "original": "IMG_0028.CR2",
+      "title": "An ordinary edge. An odd result.",
+      "label": "By the water",
+      "alt": "A pale waterside post with coloured registration fringes against the horizon.",
+      "width": 3476,
+      "height": 5208,
+      "patch": {
+        "x": 1412,
+        "y": 1931,
+        "size": 512
+      },
+      "source_sha256": "dd1e9f1606bab15b601697eec4022fddda64292570545dbc8e382538093da11b",
+      "wide": "assets/photos/harbour-wide.webp",
+      "small": "assets/photos/harbour-small.webp",
+      "pixels": "assets/photos/harbour-pixels.png",
+      "detail": "assets/photos/harbour-detail.png"
+    },
+    {
+      "id": "wall",
+      "original": "IMG_0047.CR2",
+      "title": "Colour finds the cracks.",
+      "label": "Brickwork",
+      "alt": "Pale brickwork with fine magenta, green and cyan patterns along the mortar.",
+      "width": 5208,
+      "height": 3476,
+      "patch": {
+        "x": 2765,
+        "y": 1134,
+        "size": 512
+      },
+      "source_sha256": "36b999b5a2be1380933072d2861e26231e11dafd80be2481b9c5725451c9d9cb",
+      "wide": "assets/photos/wall-wide.webp",
+      "small": "assets/photos/wall-small.webp",
+      "pixels": "assets/photos/wall-pixels.png",
+      "detail": "assets/photos/wall-detail.png"
+    },
+    {
+      "id": "bark-two",
+      "original": "IMG_0014.CR2",
+      "title": "Same tree. Another kind of strange.",
+      "label": "Bark, again",
+      "alt": "A second tree-bark photograph with dense blue, gold and violet texture.",
+      "width": 3476,
+      "height": 5208,
+      "patch": {
+        "x": 1830,
+        "y": 2348,
+        "size": 512
+      },
+      "source_sha256": "e4d9cacdd676dbcdad8231d82405b330794542b6cb975084f7879db78ffa071c",
+      "wide": "assets/photos/bark-two-wide.webp",
+      "small": "assets/photos/bark-two-small.webp",
+      "pixels": "assets/photos/bark-two-pixels.png",
+      "detail": "assets/photos/bark-two-detail.png"
+    }
+  ]
+}

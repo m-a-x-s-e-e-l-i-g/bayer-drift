@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased — showcase and documentation
+
+- Public landing page with five real EOS M RAW-developed photographs.
+- Lossless detail patches, matching overview markers and a pannable 2× / 4× / 8× pixel viewer.
+- Full photographs and enlarged crops in the README, with processing and image-provenance notes.
+- The released 0.1.0 camera module and download remain unchanged.
+
 ## 0.1.0 — 2026-10-31
 
 First public release for the original Canon EOS M, Canon firmware 2.0.2, with the Magic Lantern 2025-06-20 EOSM.202 build.

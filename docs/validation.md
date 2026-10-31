@@ -2,7 +2,9 @@
 
 ## Camera confirmation
 
-On 2026-10-31, Max Seelig confirmed that the current Bayer Drift module was working on the EOS M and requested its first GitHub release. This is an owner-reported physical-camera result, separate from the automated fixtures. An installed-module hash and result CR2 files were not supplied with that confirmation. Result photographs will be added when supplied.
+On 2026-10-31, Max Seelig confirmed that the current Bayer Drift module was working on the EOS M and requested its first GitHub release. This is an owner-reported physical-camera result, separate from the automated fixtures. An installed-module hash and result CR2 files were not supplied with that initial confirmation.
+
+Max subsequently supplied original CR2 photographs for the [public gallery](https://bayer-drift.netlify.app/) and [README examples](../README.md#from-the-eos-m). Five photographs are shown with lossless, coordinate-matched detail patches. Their source-file hashes, RAW-development settings and crop bounds are recorded in [photos.json](../site/assets/photos/photos.json). Capture recipes and an exact installed-module hash remain unrecorded. The original release's archived report is retained unchanged; the later gallery is additional photographic evidence, not a new automated hardware test.
 
 Release 0.1.0 promotes the capture-only development implementation. Its camera-processing source is unchanged; the release updates version metadata, documentation and build/package tooling. The release evidence compares every module build input against the archived development source, normalizing line endings, with only the version header and module README allowed to change. The versioned release binary was rebuilt and passed the full automated suite; it has a new binary hash and is not claimed to have been independently retested on the camera.
 
