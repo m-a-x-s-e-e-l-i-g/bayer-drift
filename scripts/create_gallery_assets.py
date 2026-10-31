@@ -57,11 +57,26 @@ def main():
         # A fixed 160x160 native-pixel crop, enlarged with nearest-neighbour.
         detail = patch.crop((176, 176, 336, 336)).resize((960, 960), Image.Resampling.NEAREST)
         detail.save(args.output / f"{slug}-detail.png", optimize=True)
+        # Fetch only the visible region in the browser. Lossless WebP preserves
+        # every developed RGB pixel while avoiding a full-frame image decode.
+        tile_dir = args.output / f"{slug}-tiles"
+        tile_dir.mkdir(exist_ok=True)
+        columns, rows = (width+edge-1)//edge, (height+edge-1)//edge
+        tile_hashes = {}
+        for row in range(rows):
+            for column in range(columns):
+                tile = photo.crop((column*edge, row*edge, min(width, (column+1)*edge), min(height, (row+1)*edge)))
+                target = tile_dir / f"{column}-{row}.webp"
+                tile.save(target, lossless=True, exact=True, method=4)
+                tile_hashes[target.name] = hashlib.sha256(target.read_bytes()).hexdigest()
+            print(filename, "native tile row", row+1, "of", rows, flush=True)
         item = dict(id=slug, original=filename, title=title, label=label, alt=alt,
                     width=width, height=height, patch=dict(x=left, y=top, size=edge),
                     source_sha256=source_hash, wide=f"assets/photos/{slug}-wide.webp",
                     small=f"assets/photos/{slug}-small.webp", pixels=f"assets/photos/{slug}-pixels.png",
-                    detail=f"assets/photos/{slug}-detail.png")
+                    detail=f"assets/photos/{slug}-detail.png",
+                    tiles=dict(size=edge, columns=columns, rows=rows, lossless=True,
+                               template=f"assets/photos/{slug}-tiles/{{x}}-{{y}}.webp", sha256=tile_hashes))
         entries.append(item)
         print(filename, photo.size, "patch", left, top, flush=True)
     manifest = dict(
@@ -70,7 +85,7 @@ def main():
                         white_balance="camera", auto_bright=True, bit_depth=8,
                         added_effects=False, sharpening=False, noise_reduction=False),
         note="Web developments of camera-processed CR2 files; no synthetic effect added. "
-             "Recipe values were not supplied and are not inferred. Native patches are lossless PNG; "
+             "Recipe values were not supplied and are not inferred. Native patches are lossless PNG; full-frame tiles are lossless WebP. "
              "web overviews are resized WebP. Source CR2 files are not distributed.",
         photos=entries,
     )

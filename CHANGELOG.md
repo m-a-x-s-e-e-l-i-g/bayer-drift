@@ -4,6 +4,7 @@
 
 - Public landing page with five real EOS M RAW-developed photographs.
 - Lossless detail patches, matching overview markers and a pannable 2× / 4× / 8× pixel viewer.
+- Whole-photograph exploration: click or tap the overview, drag either view, or use the keyboard; load only visible native-resolution tiles.
 - Full photographs and enlarged crops in the README, with processing and image-provenance notes.
 - The released 0.1.0 camera module and download remain unchanged.
 

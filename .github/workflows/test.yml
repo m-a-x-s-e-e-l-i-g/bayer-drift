@@ -17,3 +17,5 @@ jobs:
         run: python3 scripts/test_bayer.py --full
       - name: Check showcase assets and image provenance
         run: python3 scripts/check_site.py
+      - name: Check photo explorer geometry and edge coverage
+        run: node --test tests/photo_explorer.mjs

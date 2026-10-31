@@ -10,7 +10,7 @@ Developed and tested on the original EOS M by Max Seelig. These examples are dev
 
 ## From the EOS M
 
-Full photographs on the left; matching **160 × 160 pixel crops**, enlarged with nearest-neighbour scaling, on the right. Select an image to open the larger version, or use the landing page's **[2× / 4× / 8× pixel viewer](https://bayer-drift.netlify.app/#closer)** to inspect and pan through the details.
+Full photographs on the left; matching **160 × 160 pixel crops**, enlarged with nearest-neighbour scaling, on the right. Select an image to open the larger version, or use the landing page's **[2× / 4× / 8× pixel viewer](https://bayer-drift.netlify.app/#closer)** to explore the whole photograph. Click or tap anywhere in its left-hand overview to choose a spot, then drag the close-up to pan. Native-resolution tiles load on demand.
 
 | The photograph | Look closer |
 |---|---|
