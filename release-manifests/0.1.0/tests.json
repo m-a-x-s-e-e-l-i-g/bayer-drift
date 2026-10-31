@@ -1,0 +1,102 @@
+{
+  "kind": "bayer-drift-host-arm-fixtures",
+  "hardware_test": false,
+  "runs": [
+    {
+      "name": "raw-host-sanitizers",
+      "log": "raw-host-sanitizers.log",
+      "sha256": "adba36f1b7bace93a6bbda20e0d090997f4086e7ffb0ff295e9e9b5b1d7696ad"
+    },
+    {
+      "name": "raw-full-eosm-sanitizers",
+      "log": "raw-full-eosm-sanitizers.log",
+      "sha256": "c300932f613696191b2205da0d1f9cc148343e615fc295d038b19d459a5499a4"
+    },
+    {
+      "name": "arm946-eos",
+      "log": "arm946-eos.log",
+      "sha256": "43f4079ac06b26880a0bd145c45873020c1948ebc060c3990a595ce81aed80cc"
+    },
+    {
+      "name": "arm946-eos5",
+      "log": "arm946-eos5.log",
+      "sha256": "43f4079ac06b26880a0bd145c45873020c1948ebc060c3990a595ce81aed80cc"
+    },
+    {
+      "name": "capture-host-sanitizers",
+      "log": "capture-host-sanitizers.log",
+      "sha256": "9829806a66710afeae782adf9a0de12721b08a96543ed01bf2985414d6b088ae"
+    },
+    {
+      "name": "capture-shutdown-sanitizers",
+      "log": "capture-shutdown-sanitizers.log",
+      "sha256": "9829806a66710afeae782adf9a0de12721b08a96543ed01bf2985414d6b088ae"
+    },
+    {
+      "name": "menu-settings-sanitizers",
+      "log": "menu-settings-sanitizers.log",
+      "sha256": "a02b62369ee12e182cfffdae67f8d9c06621e3fb6b2f028005bc159965930883"
+    },
+    {
+      "name": "capture-only-low-memory-sanitizers",
+      "log": "capture-only-low-memory-sanitizers.log",
+      "sha256": "9829806a66710afeae782adf9a0de12721b08a96543ed01bf2985414d6b088ae"
+    },
+    {
+      "name": "module-arm946-eos",
+      "log": "module-arm946-eos.log",
+      "sha256": "933df893b6d2279019761e95dfe1b755169abf8c9f134d253f602db6568946c2"
+    },
+    {
+      "name": "module-arm946-eos5",
+      "log": "module-arm946-eos5.log",
+      "sha256": "933df893b6d2279019761e95dfe1b755169abf8c9f134d253f602db6568946c2"
+    },
+    {
+      "name": "module-corruption-rejected",
+      "log": "module-corruption-rejected.log",
+      "sha256": "58ccb3ce88aac86b46b4a2e3b0bb4e3556e2dd2106ea78a593e58bc008079220"
+    }
+  ],
+  "source_files": {
+    "modules/bayer/bayer.c": "6210e7878d76ecf1c33620f87847fd165b9beb7dc0374ed419f33c403c11914f",
+    "modules/bayer/bayer_camera.c": "16bb968f03e4a2ae3f65be39f2e664e05c0bd1eacef7d12bfcae3e39dd55d628",
+    "modules/bayer/bayer_camera.h": "830915e01f35e9ab9a8becbd67683bdfc64bcb7e60f9a1d38b0a04e5067a74e5",
+    "modules/bayer/bayer_capture_gate.c": "6530bf2b28da10791b7d42a0245ea7c119e0f991ce13eacc582aeb52c41c336f",
+    "modules/bayer/bayer_capture_gate.h": "bc75f6bde3dc4cfb2655707fefca6b9528eb07857a3c8f43decc96e3d4bde817",
+    "modules/bayer/bayer_capture_runtime.c": "c53e651421b02f39a50d92a6a246940ddbc744e0393ff82025b8566b174c2ab7",
+    "modules/bayer/bayer_driver.c": "413d87bab450802d05249b03458ba7daa0c4893c67be66ac958f5f27b0d666a6",
+    "modules/bayer/bayer_preview.c": "389957a34119fae1cd70486b0ec93663052560215726a70576641432bd9074cb",
+    "modules/bayer/bayer_raw_trace.c": "b3b14fcbfdbed15ef6bdafc004a7e7f12a06aab14d55aa16917bf752f219ca35",
+    "modules/bayer/bayer_raw_trace.h": "a7f4be914802cd73657f0a77672db6262362e79b323ec032699d57135268f666",
+    "modules/bayer/bayer_settings.c": "a01b4e3e59e6040cd4bcd8d3ae3f619fe012cdefee485b35d840350c67b32c96",
+    "modules/bayer/bayer_settings.h": "40b58df7b75f8fe6fc4f722856415e26135d733405715d81736258da6edbce6d",
+    "modules/bayer/effect_config.h": "0f311f9d53e474ccd4401fdaacf053672620d2d8769e29d79d0b20823da2efdc",
+    "modules/bayer/fx_bayer.c": "a570d48ddfb28dffb994f5539341fe5ee1782751b675739e79c3656a700ec778",
+    "modules/bayer/fx_bayer.h": "8725d66f3aaf1b9f7792015b667dbe4a67f7a381d135ec46547941533b1c363e",
+    "modules/bayer/Makefile": "04ca2a7da200bf7d1df567763d0003ca9906b79b7b9a7fe6b09d77ae1eae0ff7",
+    "modules/bayer/README.rst": "e54dc74d0ea81c39fcfd564eb97a05a42187bd7b79b712ae1a9406304e369330",
+    "tests/bayer_raw.c": "84e5db4b3e9084aa37b33e51c4b3988e340746e4f35633c5a6cd1313785bd6fa",
+    "tests/preview_sdk.c": "f75d44caee3582172e944451b59e3f5e22faf3f92bbbd5dc5ffdd6abd663e547",
+    "modules/glock/gl_format.c": "04df7444eded4fa0896bc2111b15844239edb122bb809215a244a23615f6722d",
+    "scripts/test_bayer.py": "1f8e17427586f4e0f5881d4f655410756745cf771d76666633fe1cf41e7de19a",
+    "tests/bayer_menu.c": "d9c22df45a2f411c5362e42d2ccc3519230c0c0d8eaa431f0020dc8b2323c29a",
+    "tests/bayer_capture.c": "a050d45d9dad7dac8631fdf2b8ebb3184a57f6f0c706af171093cd717c016c68",
+    "tests/bayer_binary.c": "1829b25fdbf2472132a49204543e3e3f43280da1555de904cb448c2330e8ce8c",
+    "tests/bayer_dev1_reference/bayer_preview.c": "4113f5c4502823ea7dedd59210d5be09391c341b881fa4acb9580eeb342d934a",
+    "tests/bayer_dev1_reference/fx_bayer.c": "ef176d8477b35b11a901a3bfae0d7c53a7bb32c5468d1699f7f14d192a6a366e",
+    "tests/bayer_dev1_reference/fx_bayer.h": "a9c876cb100e8d9d8581a9c78f1b9df68d84af4c433af62d40aad1d3267a5a81",
+    "tests/bayer_dev1_reference/provenance.json": "30be0ebc5e3d3b7abd78a53ded08710de6d9837ce213e4fca245084523eb20ae",
+    "tests/bayer_preview_staging.c": "4cfdc622679fd10a3308a8fbbd036223757f321e33f57913a93d434014d6cc29",
+    "tests/bayer_capture_only.c": "f161148578f9b64a44c9d6f765de337e7c9442db7cb919af971a95d7b971de0b",
+    "tests/fx_sdk.h": "5303e9dd4a0f541a9117708c9ed706cb1b5effa3cb40996723ad70e973fd7005",
+    "tests/mirror_camera_sdk.h": "782de60ce82783dfa0e2505efbf7121ca7d4887661503ee3639dad067990bb39",
+    "tests/mirror_trace_sdk.h": "1fe65658cfb5db9ffd5cd9a06251380af1f2f5ec4020319318c5e2bea1a997b2",
+    "tests/mirror_ui_sdk.h": "d8da77879e2f16a346f1ff141b395790de1801cae49c23672854629e310726e8",
+    "tests/mirror_settings_sdk.h": "60cb2e8c76654e7db95d43b15096f00515b6d2ca3e52d7506634fac57fbab265"
+  },
+  "module_sha256": "e1361d04cae523f03d72b8f333b5bdbed9b7b1d28e099545d3ba1080084ffa86",
+  "capture_only": true,
+  "display_filter_registered": false,
+  "workspace_bytes": 39600
+}

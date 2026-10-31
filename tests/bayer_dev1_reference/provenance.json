@@ -1,0 +1,8 @@
+{
+  "baseline_zip_sha256": "496c690cbf2066a5d72f1b6aea2d6ff5ae142094ae84c8691b0d3a80eb83a45e",
+  "files": {
+    "fx_bayer.c": "ef176d8477b35b11a901a3bfae0d7c53a7bb32c5468d1699f7f14d192a6a366e",
+    "fx_bayer.h": "a9c876cb100e8d9d8581a9c78f1b9df68d84af4c433af62d40aad1d3267a5a81",
+    "bayer_preview.c": "4113f5c4502823ea7dedd59210d5be09391c341b881fa4acb9580eeb342d934a"
+  }
+}

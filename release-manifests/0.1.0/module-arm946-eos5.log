@@ -1,0 +1,2 @@
+BINARY_PROFILE EOSM 2.0.2 8 480 PASS
+BINARY_MODULE_RESULT api=8 profiles=1 unsupported=1 sensor_reads=0 PASS

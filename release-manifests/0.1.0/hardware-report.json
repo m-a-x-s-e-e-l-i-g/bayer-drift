@@ -1,0 +1,13 @@
+{
+  "basis": "owner_report",
+  "reported_by": "Max Seelig (MAXmade)",
+  "reported_on": "2026-10-31",
+  "camera": "EOSM",
+  "canon_firmware": "2.0.2",
+  "ml_target": "2025-06-20 EOSM.202 / API 8",
+  "operation_confirmed": true,
+  "summary": "Owner confirmed that Bayer Drift was working on the EOS M and requested its first public GitHub release.",
+  "installed_module_hash_recorded": false,
+  "result_photographs_included": false,
+  "scope": "Confirmation of the development implementation. Release 0.1.0 promotes that implementation with version/documentation changes and a rebuilt, automatically tested binary; the release rebuild is not claimed as an independent camera test."
+}

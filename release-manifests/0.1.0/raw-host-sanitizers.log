@@ -1,0 +1,3 @@
+BAYER_PREVIEW_FNV=3644826683
+BAYER_UYVY_REFERENCE: all 288 full-resolution previews match scalar oracle; RAW remains dev1-identical PASS
+BAYER_RAW={"cases":864,"samples":387072,"mismatches":0}

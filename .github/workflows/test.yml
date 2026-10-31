@@ -1,0 +1,17 @@
+name: RAW and capture fixtures
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  host-fixtures:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check RAW samples, full EOS M geometry, capture and settings
+        run: python3 scripts/test_bayer.py --full

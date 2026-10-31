@@ -1,0 +1,59 @@
+BINARY FIXTURE FAIL line 162: controls.initialized&&controls.params.value[0]==4&&!controls.params.value[1]&&!controls.params.value[2]
+Lockdown read 4
+Lockdown read 4
+Lockdown read 5
+Lockdown read 5
+Lockdown read 0
+Lockdown read 0
+Lockdown read 1
+Lockdown read 1
+Lockdown read 2
+Lockdown read 2
+Lockdown read 3
+Lockdown read 3
+00000000 - 07FFFFFF: versatile.ram
+10000000 - 10000FFF: arm-sysctl
+10140000 - 10140FFF: pl190
+10003000 - 10003FFF: vpb-sic
+10006000 - 10006FFF: pl050
+10007000 - 10007FFF: pl050
+10001000 - 10001FFF: pci-vpb-regs
+41000000 - 41FFFFFF: pci-vpb-selfconfig
+42000000 - 42FFFFFF: pci-vpb-config
+43000000 - 42FFFFFF: pci_io
+44000000 - 4FFFFFFF: pci-vbp-window
+50000000 - 5FFFFFFF: pci-vbp-window
+60000000 - 6FFFFFFF: pci-vbp-window
+10010000 - 1001000F: smc91c111-mmio
+101F1000 - 101F1FFF: pl011
+101F2000 - 101F2FFF: pl011
+101F3000 - 101F3FFF: pl011
+10009000 - 10009FFF: pl011
+10130000 - 10130FFF: pl080
+101E2000 - 101E2FFF: sp804
+101E3000 - 101E3FFF: sp804
+101E4000 - 101E4FFF: pl061
+101E5000 - 101E5FFF: pl061
+101E6000 - 101E6FFF: pl061
+101E7000 - 101E7FFF: pl061
+10120000 - 10120FFF: pl110
+10005000 - 10005FFF: pl181
+1000B000 - 1000BFFF: pl181
+101E8000 - 101E8FFF: pl031
+10002000 - 10002FFF: versatile_i2c
+10004000 - 10004FFF: pl041
+34000000 - 37FFFFFF: versatile.flash
+00000000 - FFFFFFFF: bus master
+00000000 - FFFFFFFF: bus master
+Lockdown read 4
+Lockdown read 4
+Lockdown read 5
+Lockdown read 5
+Lockdown read 0
+Lockdown read 0
+Lockdown read 1
+Lockdown read 1
+Lockdown read 2
+Lockdown read 2
+Lockdown read 3
+Lockdown read 3
